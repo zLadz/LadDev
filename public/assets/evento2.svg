@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="226" viewBox="0 0 250 226">
+  <rect width="250" height="226" fill="#e8f4f7"/>
+  <circle cx="125" cy="100" r="45" fill="#49c3eb" stroke="#0b141d" stroke-width="3"/>
+  <path d="M30 160 L220 160 L190 210 L60 210 Z" fill="#0b141d"/>
+  <text x="125" y="190" font-family="Consolas, monospace" font-size="14" fill="#0b141d" text-anchor="middle">Estudo de mercado</text>
+</svg>

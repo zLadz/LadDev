@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Lad Dev</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="music-player" id="musicPlayer">
+  <div class="music-info">
+    <span class="music-note">♪</span>
+    <div class="music-text">
+      <span class="music-title">bbno$ - 1-800 (ft. ironmouse)</span>
+      <span class="music-status" id="musicStatus">parado</span>
+    </div>
+  </div>
+  <button class="music-btn" id="musicBtn" title="Play/Pause">Play</button>
+</div>
+
+<header>
+  <h1>Lucas Diniz</h1>
+  <p>Computer Science Student • Game Development • Computer Graphics</p>
+
+  <div class="header-buttons">
+    <a href="https://www.linkedin.com/in/lucas-diniz-0940ba1a4/" target="_blank" class="header-btn">LinkedIn</a>
+    <a href="https://github.com/zLadz" target="_blank" class="header-btn">GitHub</a>
+    <a href="mailto:lucas.alediniz01@gmail.com" class="header-btn">E-mail</a>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html" class="active">Sobre mim</a>
+  <a href="experiencias.html">Experiências</a>
+  <a href="formacao.html">Formação</a>
+  <a href="projetos.html">Projetos</a>
+</nav>
+
+<div class="container">
+
+  <div class="profile-wrapper">
+    <div class="profile-pic">
+      <img src="assets/Eu.jpg" alt="Foto de perfil">
+    </div>
+
+    <div class="speech-bubble">
+      Olá!<br>Seja bem-vindo(a) ao meu portfólio.
+    </div>
+  </div>
+
+  <h2>Sobre Mim</h2>
+  <p>
+    Sou estudante de Ciência da Computação e graduado em Desenvolvimento de Jogos Digitais,
+    formação que me proporcionou uma visão generalista sobre o desenvolvimento de software.
+    Atualmente, faço parte do Projeto Conecta 2030, uma iniciativa brasileira voltada ao desenvolvimento 
+    de um ecossistema tecnológico cooperativo para a segurança no trânsito, com foco na detecção de pedestres e 
+    ciclistas por meio de inteligência artificial, conectividade 5G e gêmeos digitais. 
+  </p>
+
+  <p>
+    Tenho interesse em estar sempre adquirindo novos conhecimentos e ampliando meu repertório profissional e pessoal. 
+    Acredito que grandes desafios nos levam a alcançar nosso potencial máximo e considero que estar constantemente 
+    aprendendo é fundamental para o desenvolvimento profissional.
+  </p>
+
+  <h2>Objetivos</h2>
+  <p>
+    Meu objetivo é continuar evoluindo na área de tecnologia, aprofundando meus conhecimentos e aplicando-os
+    em projetos que gerem impacto positivo e resolvam problemas do mundo real.
+  </p>
+
+  <p>
+    Quero me dedicar especialmente a compreender melhor as melhores práticas de desenvolvimento de software,
+    desde a concepção até a entrega, participando de projetos que envolvam dados, automação e soluções
+    tecnológicas inovadoras.
+  </p>
+
+  <div style="text-align:center;">
+    <a href="assets/Lucas_Alessandro_Diniz_CV_ATS.pdf" class="download-btn" download>Baixar Currículo (PDF)</a>
+  </div>
+
+  <div class="polaroid-frame">
+
+    <div class="polaroid polaroid-1" onclick="openZoom(this)">
+      <img src="assets/evento1.svg" alt="Evento 1">
+      <span>Evento exemplar</span>
+    </div>
+
+    <div class="polaroid polaroid-2" onclick="openZoom(this)">
+      <img src="assets/evento2.svg" alt="Evento 2">
+      <span>Estudo de mercado</span>
+    </div>
+
+    <div class="polaroid polaroid-3" onclick="openZoom(this)">
+      <img src="assets/evento3.svg" alt="Evento 3">
+      <span>Meetup de tecnologia</span>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="zoom-modal" id="zoomModal" onclick="closeZoom()">
+  <img id="zoomImage" src="" alt="Imagem ampliada">
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

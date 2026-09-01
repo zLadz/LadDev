@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="226" viewBox="0 0 250 226">
+  <rect width="250" height="226" fill="#e8f4f7"/>
+  <rect x="30" y="40" width="190" height="120" rx="2" fill="#0b141d" stroke="#49c3eb" stroke-width="3"/>
+  <rect x="50" y="60" width="60" height="20" rx="2" fill="#49c3eb"/>
+  <rect x="50" y="95" width="120" height="12" rx="2" fill="#2a485e"/>
+  <rect x="50" y="115" width="90" height="12" rx="2" fill="#2a485e"/>
+  <text x="125" y="190" font-family="Consolas, monospace" font-size="14" fill="#0b141d" text-anchor="middle">Evento exemplar</text>
+</svg>

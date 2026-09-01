@@ -1,0 +1,486 @@
+/* ============================================================
+   Tema inspirado no "Fundo de Perfil 3" (LinkedIn)
+   Preto-teal escuro • Aço-azul • Ciano neon • Branco
+   ============================================================ */
+
+body {
+  font-family: 'Consolas', 'Courier New', 'Yu Gothic', 'Meiryo', monospace;
+  margin: 0;
+  background: #04070b;
+  color: #d6e6ef;
+}
+
+header {
+  background: #08101a;
+  color: #9fb7c6;
+  padding: 40px;
+  text-align: center;
+  border-bottom: 1px solid #1c3347;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: repeating-linear-gradient(
+    90deg,
+    #49c3eb 0 20px,
+    #04070b 20px 40px
+  );
+}
+
+header h1 {
+  margin: 0;
+  color: #8ce1f7;
+  letter-spacing: 3px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #08101a;
+  border-bottom: 1px solid #1c3347;
+}
+
+nav a {
+  background: none;
+  border: none;
+  color: #86a3b4;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: inherit;
+  text-decoration: none;
+  transition: color 0.2s, background 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+  background: #0e1a26;
+  color: #8ce1f7;
+  border-bottom: 2px solid #49c3eb;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #0b141d;
+  border-radius: 2px;
+  box-shadow: 0 0 18px rgba(73, 195, 235, 0.25);
+  border: 1px solid #1c3347;
+}
+
+.container::before {
+  content: "> laddz.exe";
+  display: block;
+  color: #49c3eb;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+h1,
+h2 {
+  color: #8ce1f7;
+  font-family: 'Bahnschrift', 'Segoe UI', 'Yu Gothic', sans-serif;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  border-left: 4px solid #49c3eb;
+  padding-left: 10px;
+}
+
+p,
+li {
+  color: #d6e6ef;
+  line-height: 1.8;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+li::marker {
+  color: #49c3eb;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Foto de perfil */
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #49c3eb;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(73, 195, 235, 0.4);
+  background: #0e1a26;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Balão de fala */
+.speech-bubble {
+  background: #0e1a26;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 2px;
+  max-width: 260px;
+  position: relative;
+  border: 1px solid #1c3347;
+}
+
+.speech-bubble::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 20px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #0e1a26 transparent transparent;
+}
+
+/* Polaroids */
+.polaroid-frame {
+  margin-top: 50px;
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: #08101a;
+  border: 2px solid #22354a;
+  border-radius: 2px;
+  flex-wrap: wrap;
+}
+
+.polaroid {
+  width: 250px;
+  background: #e8f4f7;
+  padding: 12px 12px 32px;
+  border-radius: 2px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.polaroid img {
+  width: 100%;
+  height: 226px;
+  object-fit: cover;
+  background: #1c3347;
+  object-position: center;
+}
+
+.polaroid span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #0b141d;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .polaroid span {
+    font-size: 14px;
+  }
+}
+
+.polaroid-1 {
+  transform: rotate(-5deg);
+}
+
+.polaroid-2 {
+  transform: rotate(2deg);
+}
+
+.polaroid-3 {
+  transform: rotate(6deg);
+}
+
+.polaroid:hover {
+  transform: scale(1.05);
+}
+
+/* Modal de zoom */
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  background: rgba(3, 6, 10, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.zoom-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 2px;
+  box-shadow: 0 0 30px #49c3eb;
+  animation: zoomIn 0.3s ease;
+  background: #49c3eb;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Cards de projetos */
+.project-card {
+  max-width: 100%;
+  margin: 20px 0;
+  padding: 20px;
+  background: #0e1822;
+  border-radius: 2px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  border: 1px solid #1c3347;
+}
+
+.project-card h3 {
+  color: #8ce1f7;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.project-card p {
+  margin: 10px 0;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Botões de cabeçalho */
+.header-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.header-btn {
+  padding: 6px 12px;
+  background: #0e1a26;
+  color: #8ce1f7;
+  text-decoration: none;
+  border: 1px solid #49c3eb;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.header-btn:hover {
+  background: #49c3eb;
+  color: #04070b;
+  transform: translateY(-2px);
+}
+
+/* Botão download */
+.download-btn {
+  display: inline-block;
+  margin: 20px 0 40px;
+  padding: 12px 18px;
+  background: #49c3eb;
+  color: #04070b;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 0 12px rgba(73, 195, 235, 0.4);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.download-btn:hover {
+  background: #8ce1f7;
+  color: #04070b;
+  transform: translateY(-2px);
+}
+
+/* Header de projetos */
+.projects-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Botão GitHub */
+.github-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 18px;
+  background: #49c3eb;
+  color: #04070b;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 0 12px rgba(73, 195, 235, 0.4);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.github-btn:hover {
+  background: #8ce1f7;
+  color: #04070b;
+  transform: translateY(-2px);
+}
+
+.viewgh-btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 12px 18px;
+  background: #141d26;
+  color: #d6e6ef;
+  text-decoration: none;
+  border: 1px solid #2a485e;
+  border-radius: 2px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.viewgh-btn:hover {
+  background: #2a485e;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.site-btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 12px 18px;
+  background: #49c3eb;
+  color: #04070b;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 0 12px rgba(73, 195, 235, 0.4);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.site-btn:hover {
+  background: #8ce1f7;
+  color: #04070b;
+  transform: translateY(-2px);
+}
+
+/* Player de música — canto superior direito */
+.music-player {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #08101a;
+  border: 1px solid #49c3eb;
+  border-radius: 2px;
+  padding: 8px 12px;
+  box-shadow: 0 0 15px rgba(73, 195, 235, 0.35);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.music-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.music-note {
+  color: #49c3eb;
+  font-size: 20px;
+  animation: notePulse 1.2s ease-in-out infinite;
+}
+
+.music-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.music-title {
+  color: #8ce1f7;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.music-status {
+  color: #86a3b4;
+  font-size: 11px;
+}
+
+.music-btn {
+  background: #49c3eb;
+  color: #04070b;
+  border: none;
+  border-radius: 2px;
+  padding: 6px 12px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.music-btn:hover {
+  background: #8ce1f7;
+}
+
+.music-btn.playing {
+  background: #0e1a26;
+  color: #49c3eb;
+  border: 1px solid #49c3eb;
+}
+
+@keyframes notePulse {
+  0% { opacity: 0.4; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 0.4; transform: scale(0.9); }
+}

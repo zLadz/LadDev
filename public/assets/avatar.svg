@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#0e1a26"/>
+  <circle cx="100" cy="80" r="40" fill="#49c3eb"/>
+  <path d="M55 190 Q100 120 145 190 Z" fill="#49c3eb"/>
+  <text x="100" y="185" font-family="Consolas, monospace" font-size="12" fill="#e8f4f7" text-anchor="middle">LD</text>
+</svg>

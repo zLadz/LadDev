@@ -1,0 +1,14 @@
+{
+  "name": "laddev-portfolio",
+  "version": "1.0.0",
+  "description": "Site portfólio com backend Node.js (Express) - temas e textos genéricos.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
