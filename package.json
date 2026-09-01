@@ -1,7 +1,7 @@
 {
   "name": "laddev-portfolio",
   "version": "1.0.0",
-  "description": "Site portfólio com backend Node.js (Express) - temas e textos genéricos.",
+  "description": "Site portfólio com backend Node.js (Express) - Lucas Diniz.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
