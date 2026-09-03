@@ -1,6 +1,6 @@
 # LadDev
 
-Site portfólio com backend em **Node.js (Express)**, inspirado no visual do site de referência.
+Site portfólio com backend em **Node.js (Express)**.
 Contém páginas de Sobre mim, Experiências, Formação e Projetos.
 
 ## Como rodar
