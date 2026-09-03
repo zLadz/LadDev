@@ -8,49 +8,53 @@
 </head>
 <body>
 
-<div class="music-player" id="musicPlayer">
+<div class="music-player" id="musicPlayer" role="region" aria-label="Player de música">
   <div class="music-info">
-    <span class="music-note">♪</span>
+    <span class="music-note" aria-hidden="true">♪</span>
     <div class="music-text">
       <span class="music-title">bbno$ - 1-800 (ft. ironmouse)</span>
       <span class="music-status" id="musicStatus">parado</span>
     </div>
   </div>
-  <button class="music-btn" id="musicBtn" title="Play/Pause">Play</button>
+  <button class="music-btn" id="musicBtn" aria-label="Reproduzir ou pausar a música">Play</button>
 </div>
 
-<header>
+<header class="site-header">
   <h1>Lucas Diniz</h1>
   <p>Computer Science Student • Game Development • Computer Graphics</p>
 
   <div class="header-buttons">
-    <a href="https://www.linkedin.com/in/lucas-diniz-0940ba1a4/" target="_blank" class="header-btn">LinkedIn</a>
-    <a href="https://github.com/zLadz" target="_blank" class="header-btn">GitHub</a>
+    <a href="https://www.linkedin.com/in/lucas-diniz-0940ba1a4/" target="_blank" rel="noopener" class="header-btn">LinkedIn</a>
+    <a href="https://github.com/zLadz" target="_blank" rel="noopener" class="header-btn">GitHub</a>
     <a href="mailto:lucas.alediniz01@gmail.com" class="header-btn">E-mail</a>
   </div>
 </header>
 
-<nav>
+<nav class="site-nav" aria-label="Navegação principal">
   <a href="index.html">Sobre mim</a>
   <a href="experiencias.html">Experiências</a>
   <a href="formacao.html">Formação</a>
   <a href="projetos.html" class="active">Projetos</a>
 </nav>
 
-<div class="container">
+<main class="container">
 
-  <div class="projects-header">
+  <section class="projects-header" aria-label="Projetos">
     <h2>Projetos</h2>
-    <a href="https://github.com/zLadz" target="_blank" class="github-btn">
+    <a href="https://github.com/zLadz" target="_blank" rel="noopener" class="github-btn">
       GitHub
     </a>
-  </div>
+  </section>
 
   <div id="lista-projetos">
     <p>Carregando projetos...</p>
   </div>
 
-</div>
+</main>
+
+<footer class="site-footer">
+  <p>Developed by <a href="https://github.com/zLadz" target="_blank" rel="noopener">Lucas Diniz</a></p>
+</footer>
 
 <script src="js/main.js"></script>
 

@@ -29,7 +29,7 @@ header::after {
   background: repeating-linear-gradient(
     90deg,
     #49c3eb 0 20px,
-    #04070b 20px 40px
+    #49c3eb 20px 40px
   );
 }
 
@@ -205,7 +205,7 @@ li::marker {
   object-position: center;
 }
 
-.polaroid span {
+.polaroid figcaption {
   display: block;
   margin-top: 10px;
   font-size: 16px;
@@ -214,7 +214,7 @@ li::marker {
 }
 
 @media (max-width: 768px) {
-  .polaroid span {
+  .polaroid figcaption {
     font-size: 14px;
   }
 }
@@ -321,9 +321,13 @@ li::marker {
 }
 
 /* Botão download */
+.download-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
 .download-btn {
   display: inline-block;
-  margin: 20px 0 40px;
   padding: 12px 18px;
   background: #49c3eb;
   color: #04070b;
@@ -483,4 +487,42 @@ li::marker {
   0% { opacity: 0.4; transform: scale(0.9); }
   50% { opacity: 1; transform: scale(1.05); }
   100% { opacity: 0.4; transform: scale(0.9); }
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #08101a;
+  border-top: 1px solid #1c3347;
+  padding: 24px 16px;
+  text-align: center;
+  color: #86a3b4;
+  font-size: 14px;
+}
+
+.site-footer p {
+  margin: 0;
+  color: #86a3b4;
+  line-height: 1.6;
+}
+
+.site-footer a {
+  color: #8ce1f7;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(140, 225, 247, 0.4);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.site-footer a:hover {
+  color: #49c3eb;
+  border-bottom-color: #49c3eb;
+}
+
+/* Lista de formação sem marcadores */
+.formacao-lista {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.polaroid {
+  margin: 0;
 }

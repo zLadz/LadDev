@@ -8,102 +8,110 @@
 </head>
 <body>
 
-<div class="music-player" id="musicPlayer">
+<div class="music-player" id="musicPlayer" role="region" aria-label="Player de música">
   <div class="music-info">
-    <span class="music-note">♪</span>
+    <span class="music-note" aria-hidden="true">♪</span>
     <div class="music-text">
       <span class="music-title">bbno$ - 1-800 (ft. ironmouse)</span>
       <span class="music-status" id="musicStatus">parado</span>
     </div>
   </div>
-  <button class="music-btn" id="musicBtn" title="Play/Pause">Play</button>
+  <button class="music-btn" id="musicBtn" aria-label="Reproduzir ou pausar a música">Play</button>
 </div>
 
-<header>
+<header class="site-header">
   <h1>Lucas Diniz</h1>
   <p>Computer Science Student • Game Development • Computer Graphics</p>
 
   <div class="header-buttons">
-    <a href="https://www.linkedin.com/in/lucas-diniz-0940ba1a4/" target="_blank" class="header-btn">LinkedIn</a>
-    <a href="https://github.com/zLadz" target="_blank" class="header-btn">GitHub</a>
+    <a href="https://www.linkedin.com/in/lucas-diniz-0940ba1a4/" target="_blank" rel="noopener" class="header-btn">LinkedIn</a>
+    <a href="https://github.com/zLadz" target="_blank" rel="noopener" class="header-btn">GitHub</a>
     <a href="mailto:lucas.alediniz01@gmail.com" class="header-btn">E-mail</a>
   </div>
 </header>
 
-<nav>
+<nav class="site-nav" aria-label="Navegação principal">
   <a href="index.html" class="active">Sobre mim</a>
   <a href="experiencias.html">Experiências</a>
   <a href="formacao.html">Formação</a>
   <a href="projetos.html">Projetos</a>
 </nav>
 
-<div class="container">
+<main class="container">
 
-  <div class="profile-wrapper">
+  <section class="profile-wrapper" aria-label="Apresentação">
     <div class="profile-pic">
-      <img src="assets/Eu.jpg" alt="Foto de perfil">
+      <img src="assets/Eu.jpg" alt="Foto de perfil de Lucas Diniz">
     </div>
 
     <div class="speech-bubble">
       Olá!<br>Seja bem-vindo(a) ao meu portfólio.
     </div>
-  </div>
+  </section>
 
-  <h2>Sobre Mim</h2>
-  <p>
-    Sou estudante de Ciência da Computação e graduado em Desenvolvimento de Jogos Digitais,
-    formação que me proporcionou uma visão generalista sobre o desenvolvimento de software.
-    Atualmente, faço parte do Projeto Conecta 2030, uma iniciativa brasileira voltada ao desenvolvimento 
-    de um ecossistema tecnológico cooperativo para a segurança no trânsito, com foco na detecção de pedestres e 
-    ciclistas por meio de inteligência artificial, conectividade 5G e gêmeos digitais. 
-  </p>
+  <section aria-labelledby="sobre-titulo">
+    <h2 id="sobre-titulo">Sobre Mim</h2>
+    <p>
+      Sou estudante de Ciência da Computação e graduado em Desenvolvimento de Jogos Digitais,
+      formação que me proporcionou uma visão generalista sobre o desenvolvimento de software.
+      Atualmente, faço parte do Projeto Conecta 2030, uma iniciativa brasileira voltada ao desenvolvimento 
+      de um ecossistema tecnológico cooperativo para a segurança no trânsito, com foco na detecção de pedestres e 
+      ciclistas por meio de inteligência artificial, conectividade 5G e gêmeos digitais. 
+    </p>
 
-  <p>
-    Tenho interesse em estar sempre adquirindo novos conhecimentos e ampliando meu repertório profissional e pessoal. 
-    Acredito que grandes desafios nos levam a alcançar nosso potencial máximo e considero que estar constantemente 
-    aprendendo é fundamental para o desenvolvimento profissional.
-  </p>
+    <p>
+      Tenho interesse em estar sempre adquirindo novos conhecimentos e ampliando meu repertório profissional e pessoal. 
+      Acredito que grandes desafios nos levam a alcançar nosso potencial máximo e considero que estar constantemente 
+      aprendendo é fundamental para o desenvolvimento profissional.
+    </p>
+  </section>
 
-  <h2>Objetivos</h2>
-  <p>
-    Meu objetivo é continuar evoluindo na área de tecnologia, aprofundando meus conhecimentos e aplicando-os
-    em projetos que gerem impacto positivo e resolvam problemas do mundo real.
-  </p>
+  <section aria-labelledby="objetivos-titulo">
+    <h2 id="objetivos-titulo">Objetivos</h2>
+    <p>
+      Meu objetivo é continuar evoluindo na área de tecnologia, aprofundando meus conhecimentos e aplicando-os
+      em projetos que gerem impacto positivo e resolvam problemas do mundo real.
+    </p>
 
-  <p>
-    Quero me dedicar especialmente a compreender melhor as melhores práticas de desenvolvimento de software,
-    desde a concepção até a entrega, participando de projetos que envolvam dados, automação e soluções
-    tecnológicas inovadoras.
-  </p>
+    <p>
+      Quero me dedicar especialmente a compreender melhor as melhores práticas de desenvolvimento de software,
+      desde a concepção até a entrega, participando de projetos que envolvam dados, automação e soluções
+      tecnológicas inovadoras.
+    </p>
+  </section>
 
-  <div style="text-align:center;">
+  <div class="download-wrapper">
     <a href="assets/Lucas_Alessandro_Diniz_CV_ATS.pdf" class="download-btn" download>Baixar Currículo (PDF)</a>
   </div>
 
-  <div class="polaroid-frame">
+  <section class="polaroid-frame" aria-label="Galeria de fotos">
 
-    <div class="polaroid polaroid-1" onclick="openZoom(this)">
-      <img src="assets/evento1.svg" alt="Evento 1">
-      <span>Evento exemplar</span>
-    </div>
+    <figure class="polaroid polaroid-1" onclick="openZoom(this)">
+      <img src="assets/evento1.svg" alt="Imagem ilustrativa de um evento exemplar">
+      <figcaption>Evento exemplar</figcaption>
+    </figure>
 
-    <div class="polaroid polaroid-2" onclick="openZoom(this)">
-      <img src="assets/evento2.svg" alt="Evento 2">
-      <span>Estudo de mercado</span>
-    </div>
+    <figure class="polaroid polaroid-2" onclick="openZoom(this)">
+      <img src="assets/evento2.svg" alt="Imagem ilustrativa de estudo de mercado">
+      <figcaption>Estudo de mercado</figcaption>
+    </figure>
 
-    <div class="polaroid polaroid-3" onclick="openZoom(this)">
-      <img src="assets/evento3.svg" alt="Evento 3">
-      <span>Meetup de tecnologia</span>
-    </div>
+    <figure class="polaroid polaroid-3" onclick="openZoom(this)">
+      <img src="assets/evento3.svg" alt="Imagem ilustrativa de um meetup de tecnologia">
+      <figcaption>Meetup de tecnologia</figcaption>
+    </figure>
 
-  </div>
+  </section>
 
-</div>
+</main>
 
-<div class="zoom-modal" id="zoomModal" onclick="closeZoom()">
+<div class="zoom-modal" id="zoomModal" onclick="closeZoom()" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
   <img id="zoomImage" src="" alt="Imagem ampliada">
 </div>
+
+<footer class="site-footer">
+  <p>Developed by <a href="https://github.com/zLadz" target="_blank" rel="noopener">Lucas Diniz</a></p>
+</footer>
 
 <script src="js/main.js"></script>
 </body>
