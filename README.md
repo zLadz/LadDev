@@ -44,3 +44,11 @@ Acesse em: http://localhost:3000
 Endpoint de exemplo consumido pela página de Projetos:
 
 - `GET /api/projetos` — retorna a lista de projetos em JSON.
+
+## Créditos de Mídia
+
+A trilha sonora utilizada neste portfólio é de uso livre sob os termos das respectivas licenças dos autores:
+
+*   **Música:** "Make It Happen" por [1000 Handz](https://1000handz.com)
+*   **Fonte:** [Free Music Archive](https://freemusicarchive.org)
+*   **Licença:** [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org)

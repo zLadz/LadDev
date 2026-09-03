@@ -19,7 +19,7 @@ document.addEventListener('keydown', function (e) {
 var musicBtn = document.getElementById('musicBtn');
 var musicStatus = document.getElementById('musicStatus');
 
-var audio = new Audio('assets/bbno - 1-800 (ft. ironmouse).mp3');
+var audio = new Audio('assets/1000 Handz - Make It Happen.mp3');
 audio.loop = true;
 audio.volume = 0.3;
 audio.preload = 'metadata';
