@@ -76,7 +76,7 @@ nav a.active {
 }
 
 .container::before {
-  content: "> laddz.exe";
+  content: "> Lad.exe";
   display: block;
   color: #49c3eb;
   margin-bottom: 15px;
