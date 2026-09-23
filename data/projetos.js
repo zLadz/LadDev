@@ -2,7 +2,7 @@ const projetos = [
   {
     titulo: 'Kotoba',
     descricao:
-      'Kotoba é um dicionário Japonês → Português Brasileiro.' +
+      'Kotoba é um dicionário Japonês → Português Brasileiro. ' +
       'As traduções em pt-BR são uma camada lexical própria. ',
     link: 'https://github.com/zLadz/Kotoba-Jisho',
     tipo: 'github',
