@@ -18,8 +18,8 @@ const projetos = [
   {
     titulo: 'Ladcall',
     descricao:
-      'Serviço de signaling para aplicação de chamadas (WebRTC), hospedado na nuvem via Render.',
-    link: 'https://ladcall-signaling.onrender.com/',
+      'Serviço de signaling P2P Híbrido (STUN/TURN) para aplicação de chamadas (WebRTC).',
+    link: 'https://ladcall.io/',
     tipo: 'site',
   },
 ];
