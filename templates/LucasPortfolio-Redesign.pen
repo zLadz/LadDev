@@ -1,0 +1,3355 @@
+{
+  "version": "2.21",
+  "children": [
+    {
+      "type": "frame",
+      "id": "EQSrK",
+      "x": 0,
+      "y": 0,
+      "name": "Desktop / Portfolio",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "R08h8",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 96,
+          "stroke": "$border",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "strokeAlignment": "inner",
+          "padding": [
+            0,
+            64
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "C4jaL",
+              "name": "Brand",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "UhWu4",
+                  "name": "Brand Mark",
+                  "rotation": 45,
+                  "fill": "$accent",
+                  "width": 9,
+                  "height": 9
+                },
+                {
+                  "type": "text",
+                  "id": "VryJ4",
+                  "name": "Brand Name",
+                  "fill": "$text",
+                  "content": "Lucas Diniz",
+                  "fontFamily": "$font-display",
+                  "fontSize": 21,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.4
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "YnfPm",
+              "name": "Main Nav",
+              "gap": 34,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "CwfU8",
+                  "name": "Nav Sobre mim",
+                  "fill": "$accent",
+                  "content": "Sobre mim",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "xa8BY",
+                  "name": "Nav Experiências",
+                  "fill": "$muted",
+                  "content": "Experiências",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "avHvf",
+                  "name": "Nav Formação",
+                  "fill": "$muted",
+                  "content": "Formação",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "G4oSFz",
+                  "name": "Nav Projetos",
+                  "fill": "$muted",
+                  "content": "Projetos",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AmwlP",
+              "name": "Social Links",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "pJN6d",
+                  "name": "Social LinkedIn",
+                  "cornerRadius": 3,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "padding": [
+                    8,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "iYaaW",
+                      "name": "Label",
+                      "fill": "$muted",
+                      "content": "LinkedIn",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gIimw",
+                  "name": "Social GitHub",
+                  "cornerRadius": 3,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "padding": [
+                    8,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IrFgV",
+                      "name": "Label",
+                      "fill": "$muted",
+                      "content": "GitHub",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "v1lBc",
+                  "name": "Social E-mail",
+                  "cornerRadius": 3,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "padding": [
+                    8,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "g5roPt",
+                      "name": "Label",
+                      "fill": "$muted",
+                      "content": "E-mail",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "QRnjQ",
+          "name": "Hero",
+          "width": "fill_container",
+          "gap": 64,
+          "padding": [
+            88,
+            64,
+            80,
+            64
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "uFji7",
+              "name": "Hero Copy",
+              "width": 660,
+              "layout": "vertical",
+              "gap": 26,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "a1hL7",
+                  "name": "Eyebrow",
+                  "fill": "$accent",
+                  "content": "Olá!",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 15,
+                  "fontWeight": "normal",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "DD2bg",
+                  "name": "Headline",
+                  "fill": "$text",
+                  "textGrowth": "fixed-width",
+                  "width": 640,
+                  "content": "Seja bem-vindo(a) ao meu portfólio.",
+                  "lineHeight": 1.08,
+                  "fontFamily": "$font-display",
+                  "fontSize": 58,
+                  "fontWeight": "600",
+                  "letterSpacing": -0.5
+                },
+                {
+                  "type": "text",
+                  "id": "zFAfy",
+                  "name": "Tagline",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 540,
+                  "content": "Computer Science Student • Full Stack • Computer Graphics",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "bIkQG",
+                  "name": "Hero Actions",
+                  "gap": 14,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "OGTUr",
+                      "name": "Primary Button",
+                      "fill": "$accent",
+                      "cornerRadius": 3,
+                      "padding": [
+                        14,
+                        24
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QLZmx",
+                          "name": "Label",
+                          "fill": "#04141B",
+                          "content": "Baixar Currículo (PDF)",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "c0YoX",
+                      "name": "Ghost Button",
+                      "cornerRadius": 3,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "padding": [
+                        13,
+                        22
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FYnIv",
+                          "name": "Label",
+                          "fill": "$text",
+                          "content": "Ver no LinkedIn",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fzMix",
+              "name": "Hero Visual",
+              "width": 488,
+              "layout": "vertical",
+              "gap": 20,
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "M6If3a",
+                  "name": "Portrait Wrapper",
+                  "width": 488,
+                  "height": 552,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "JTXa6",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Frame Outer Line",
+                      "width": 488,
+                      "height": 552,
+                      "stroke": "$accent",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "rr3O1",
+                      "x": 8,
+                      "y": 8,
+                      "name": "Frame Matte",
+                      "fill": "$surface",
+                      "width": 472,
+                      "height": 536,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "strokeAlignment": "inner"
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 1,
+                      "id": "ZOHgC",
+                      "x": 20,
+                      "y": 20,
+                      "name": "Portrait",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "assets/Eu.jpg",
+                        "mode": "cover"
+                      },
+                      "width": 448,
+                      "height": 512
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "h6JHyw",
+                      "x": 20,
+                      "y": 14,
+                      "name": "Frame Tick",
+                      "fill": "$accent",
+                      "width": 56,
+                      "height": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zbv4E",
+                  "name": "Music Player",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": 4,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "gap": 12,
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "G46ql",
+                      "name": "Note",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "$surface2",
+                      "cornerRadius": 18,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "KSrdN",
+                          "name": "Note Glyph",
+                          "fill": "$accent",
+                          "content": "♪",
+                          "fontFamily": "$font-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uKHC6",
+                      "name": "Track",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kO5Sb",
+                          "name": "Track Title",
+                          "fill": "$text",
+                          "content": "Make It Happen (1000 Handz)",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "S4MXi0",
+                          "name": "Track Status",
+                          "fill": "$muted",
+                          "content": "parado",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "y82Ymj",
+                      "name": "Play Button",
+                      "fill": "$accent",
+                      "cornerRadius": 3,
+                      "padding": [
+                        8,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zkFHv",
+                          "name": "Label",
+                          "fill": "#04141B",
+                          "content": "Play",
+                          "fontFamily": "$font-body",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "U3JL4b",
+          "name": "About",
+          "width": "fill_container",
+          "gap": 96,
+          "padding": [
+            104,
+            64
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Fn8vy",
+              "name": "About Heading",
+              "width": 280,
+              "layout": "vertical",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Hbtch",
+                  "name": "Section Title",
+                  "fill": "$text",
+                  "content": "Sobre Mim",
+                  "fontFamily": "$font-display",
+                  "fontSize": 38,
+                  "fontWeight": "600",
+                  "letterSpacing": -0.4
+                },
+                {
+                  "type": "rectangle",
+                  "id": "SHah8",
+                  "name": "Accent Rule",
+                  "fill": "$accent",
+                  "width": 56,
+                  "height": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VEDCY",
+              "name": "About Body",
+              "width": 744,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xL9YE",
+                  "name": "Paragraph 1",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 744,
+                  "content": "Sou estudante de Ciência da Computação e graduado em Desenvolvimento de Jogos Digitais, formação que me proporcionou uma visão generalista sobre o desenvolvimento de software. Atualmente, faço parte do Projeto Conecta 2030, uma iniciativa brasileira voltada ao desenvolvimento de um ecossistema tecnológico cooperativo para a segurança no trânsito, com foco na detecção de pedestres e ciclistas por meio de inteligência artificial, conectividade 5G e gêmeos digitais.",
+                  "lineHeight": 1.85,
+                  "fontFamily": "$font-body",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Dzcwx",
+                  "name": "Paragraph 2",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 744,
+                  "content": "Tenho interesse em estar sempre adquirindo novos conhecimentos e ampliando meu repertório profissional e pessoal. Acredito que grandes desafios nos levam a alcançar nosso potencial máximo e considero que estar constantemente aprendendo é fundamental para o desenvolvimento profissional.",
+                  "lineHeight": 1.85,
+                  "fontFamily": "$font-body",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "c0EupD",
+          "name": "Objectives",
+          "width": "fill_container",
+          "fill": "$surface",
+          "stroke": "$border",
+          "strokeWidth": {
+            "top": 1,
+            "bottom": 1
+          },
+          "strokeAlignment": "inner",
+          "gap": 96,
+          "padding": [
+            88,
+            64
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ijzAu",
+              "name": "Objectives Heading",
+              "width": 280,
+              "layout": "vertical",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "IfVrf",
+                  "name": "Section Title",
+                  "fill": "$text",
+                  "content": "Objetivos",
+                  "fontFamily": "$font-display",
+                  "fontSize": 38,
+                  "fontWeight": "600",
+                  "letterSpacing": -0.4
+                },
+                {
+                  "type": "rectangle",
+                  "id": "fBWDB",
+                  "name": "Accent Rule",
+                  "fill": "$accent",
+                  "width": 56,
+                  "height": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BQVFZ",
+              "name": "Objectives Body",
+              "width": 744,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "PGbWI",
+                  "name": "Paragraph 1",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 744,
+                  "content": "Meu objetivo é continuar evoluindo na área de tecnologia, aprofundando meus conhecimentos e aplicando-os em projetos que gerem impacto positivo e resolvam problemas do mundo real.",
+                  "lineHeight": 1.85,
+                  "fontFamily": "$font-body",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "A4J88Q",
+                  "name": "Paragraph 2",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 744,
+                  "content": "Quero me dedicar especialmente a compreender melhor as melhores práticas de desenvolvimento de software, desde a concepção até a entrega, participando de projetos que envolvam dados, automação e soluções tecnológicas inovadoras.",
+                  "lineHeight": 1.85,
+                  "fontFamily": "$font-body",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "esPw0",
+          "name": "Experience",
+          "width": "fill_container",
+          "gap": 96,
+          "padding": [
+            104,
+            64
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "W3nxMM",
+              "name": "Experience Heading",
+              "width": 280,
+              "layout": "vertical",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "J8A8I",
+                  "name": "Section Title",
+                  "fill": "$text",
+                  "content": "Experiências",
+                  "fontFamily": "$font-display",
+                  "fontSize": 38,
+                  "fontWeight": "600",
+                  "letterSpacing": -0.4
+                },
+                {
+                  "type": "rectangle",
+                  "id": "RuJf9",
+                  "name": "Accent Rule",
+                  "fill": "$accent",
+                  "width": 56,
+                  "height": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rKgS7",
+              "name": "Experience Body",
+              "width": 744,
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qtfEg",
+                  "name": "Role",
+                  "fill": "$text",
+                  "textGrowth": "fixed-width",
+                  "width": 744,
+                  "content": "Iniciação Científica — Conecta 2030 (2025 – Atual)",
+                  "lineHeight": 1.4,
+                  "fontFamily": "$font-body",
+                  "fontSize": 20,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "kWhSl",
+                  "name": "Responsibility",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "WKv3R",
+                      "name": "Mark",
+                      "fill": "$accent",
+                      "content": "—",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$font-mono",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "iNwjw",
+                      "name": "Text",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 706,
+                      "content": "Desenvolvimento de soluções de software utilizando Python e Unreal Engine em projeto de pesquisa aplicada.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wAfHZ",
+                  "name": "Responsibility",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rYedg",
+                      "name": "Mark",
+                      "fill": "$accent",
+                      "content": "—",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$font-mono",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "JoF2L",
+                      "name": "Text",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 706,
+                      "content": "Desenvolvimento e integração de componentes para o CARLA Simulator e ambientes baseados em Unreal Engine.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pQK2d",
+                  "name": "Responsibility",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QUenz",
+                      "name": "Mark",
+                      "fill": "$accent",
+                      "content": "—",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$font-mono",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "I7MJ40",
+                      "name": "Text",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 706,
+                      "content": "Atuação em projeto envolvendo Digital Twins, Inteligência Artificial, Realidade Virtual e simulação computacional.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Fc3HE",
+                  "name": "Responsibility",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hYDkA",
+                      "name": "Mark",
+                      "fill": "$accent",
+                      "content": "—",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$font-mono",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wS3CX",
+                      "name": "Text",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 706,
+                      "content": "Desenvolvimento de soluções para integração entre sistemas reais e ambientes virtuais/simulados.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "L9wQy",
+                  "name": "Responsibility",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qIGUM",
+                      "name": "Mark",
+                      "fill": "$accent",
+                      "content": "—",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$font-mono",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VBsdN",
+                      "name": "Text",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 706,
+                      "content": "Aplicação de conceitos de programação, computação gráfica e desenvolvimento de sistemas interativos.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vpmvW",
+                  "name": "Responsibility",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "WCm90",
+                      "name": "Mark",
+                      "fill": "$accent",
+                      "content": "—",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$font-mono",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "K0dJ6M",
+                      "name": "Text",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 706,
+                      "content": "Colaboração no desenvolvimento e prototipação de soluções em equipe multidisciplinar.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JgT8K",
+                  "name": "CV Button",
+                  "cornerRadius": 3,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "padding": [
+                    12,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "e8xQon",
+                      "name": "Label",
+                      "fill": "$text",
+                      "content": "Baixar Currículo (PDF)",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "oGsGr",
+          "name": "Education",
+          "width": "fill_container",
+          "fill": "$surface",
+          "stroke": "$border",
+          "strokeWidth": {
+            "top": 1,
+            "bottom": 1
+          },
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 56,
+          "padding": [
+            104,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "iLMEm",
+              "name": "Education Columns",
+              "width": "fill_container",
+              "gap": 96,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "T0qq5",
+                  "name": "Graduation",
+                  "width": 540,
+                  "layout": "vertical",
+                  "gap": 22,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Z7tfho",
+                      "name": "Column Title",
+                      "fill": "$text",
+                      "content": "Graduação",
+                      "fontFamily": "$font-display",
+                      "fontSize": 30,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.3
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pbxI1",
+                      "name": "Degree",
+                      "width": "fill_container",
+                      "stroke": "$border",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": [
+                        16,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "d91eFo",
+                          "name": "Degree Title",
+                          "fill": "$text",
+                          "textGrowth": "fixed-width",
+                          "width": 540,
+                          "content": "Ciência da Computação — Cruzeiro do Sul Virtual",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$font-body",
+                          "fontSize": 17,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tDeBe",
+                          "name": "Degree Date",
+                          "fill": "$muted",
+                          "content": "Conclusão prevista para 06/2030",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 12.5,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CTYRq",
+                      "name": "Degree",
+                      "width": "fill_container",
+                      "stroke": "$border",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": [
+                        16,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "D9N5H",
+                          "name": "Degree Title",
+                          "fill": "$text",
+                          "textGrowth": "fixed-width",
+                          "width": 540,
+                          "content": "Tecnologia em Jogos Digitais — Facens",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$font-body",
+                          "fontSize": 17,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Txkqw",
+                          "name": "Degree Date",
+                          "fill": "$muted",
+                          "content": "Graduado em 07/2025",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 12.5,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dqEha",
+                      "name": "Degree",
+                      "width": "fill_container",
+                      "stroke": "$border",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": [
+                        16,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "D3PPa7",
+                          "name": "Degree Title",
+                          "fill": "$text",
+                          "textGrowth": "fixed-width",
+                          "width": 540,
+                          "content": "Técnico em Informática — Etec Fernando Prestes",
+                          "lineHeight": 1.45,
+                          "fontFamily": "$font-body",
+                          "fontSize": 17,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "bCI8i",
+                          "name": "Degree Date",
+                          "fill": "$muted",
+                          "content": "Graduado em 12/2019",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 12.5,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.3
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bhLAa",
+                  "name": "Courses",
+                  "width": 440,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "A6st3z",
+                      "name": "Column Title",
+                      "fill": "$text",
+                      "content": "Cursos",
+                      "fontFamily": "$font-display",
+                      "fontSize": 30,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.3
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Hxy5b",
+                      "name": "Course",
+                      "width": "fill_container",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DnC2L",
+                          "name": "Mark",
+                          "fill": "$accent",
+                          "content": "—",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "vIvD5",
+                          "name": "Text",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": 400,
+                          "content": "Git - Básico ao avançado (Udemy)",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 14.5,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "t7Bri8",
+                      "name": "Course",
+                      "width": "fill_container",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l7DCE",
+                          "name": "Mark",
+                          "fill": "$accent",
+                          "content": "—",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "p2TIT",
+                          "name": "Text",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": 400,
+                          "content": "Programação em Python do básico ao avançado (Udemy)",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 14.5,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "u5UjJ",
+                      "name": "Course",
+                      "width": "fill_container",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "F9sjd",
+                          "name": "Mark",
+                          "fill": "$accent",
+                          "content": "—",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "i8FGAf",
+                          "name": "Text",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": 400,
+                          "content": "Process of Creating a Stylized Anime Room in Blender (Udemy)",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 14.5,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "W2LnrN",
+                      "name": "Course",
+                      "width": "fill_container",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CEn2C",
+                          "name": "Mark",
+                          "fill": "$accent",
+                          "content": "—",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "LrbwX",
+                          "name": "Text",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": 400,
+                          "content": "Escultura Digital com o Blender (Udemy)",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 14.5,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SmFH2",
+                      "name": "Course",
+                      "width": "fill_container",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "E3cx2f",
+                          "name": "Mark",
+                          "fill": "$accent",
+                          "content": "—",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "c9l6F",
+                          "name": "Text",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": 400,
+                          "content": "Blender Total! Do básico ao avançado em 3D! (Udemy)",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 14.5,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "LRKra",
+                      "name": "Course",
+                      "width": "fill_container",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "i2sME",
+                          "name": "Mark",
+                          "fill": "$accent",
+                          "content": "—",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "AZVio",
+                          "name": "Text",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": 400,
+                          "content": "Aprendendo programação básica e avançada em Linguagem C++ (Udemy)",
+                          "lineHeight": 1.6,
+                          "fontFamily": "$font-body",
+                          "fontSize": 14.5,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WIsTG",
+              "name": "LinkedIn Button",
+              "cornerRadius": 3,
+              "stroke": "$accent",
+              "strokeWidth": 1,
+              "padding": [
+                12,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iRjcj",
+                  "name": "Label",
+                  "fill": "$accent",
+                  "content": "Ver no LinkedIn",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "uDa7E",
+          "name": "Projects",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            104,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "JwjGZ",
+              "name": "Projects Heading",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "gM42g",
+                  "name": "Section Title",
+                  "fill": "$text",
+                  "content": "Projetos",
+                  "fontFamily": "$font-display",
+                  "fontSize": 38,
+                  "fontWeight": "600",
+                  "letterSpacing": -0.4
+                },
+                {
+                  "type": "rectangle",
+                  "id": "TuQlh",
+                  "name": "Accent Rule",
+                  "fill": "$accent",
+                  "width": 56,
+                  "height": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oo2l0",
+              "name": "Project Cards",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bzhaU",
+                  "name": "Project Kotoba",
+                  "width": "fill_container",
+                  "height": 300,
+                  "fill": "$surface",
+                  "cornerRadius": 3,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "padding": 28,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "h0FTf",
+                      "name": "Project Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "So9xV",
+                          "name": "Card Mark",
+                          "fill": "$accent",
+                          "width": 24,
+                          "height": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "ySfel",
+                          "name": "Project Title",
+                          "fill": "$text",
+                          "content": "Kotoba",
+                          "fontFamily": "$font-display",
+                          "fontSize": 23,
+                          "fontWeight": "600",
+                          "letterSpacing": -0.2
+                        },
+                        {
+                          "type": "text",
+                          "id": "e5LV3s",
+                          "name": "Project Description",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": 300,
+                          "content": "Kotoba é um dicionário Japonês → Português Brasileiro. As traduções em pt-BR são uma camada lexical própria.",
+                          "lineHeight": 1.7,
+                          "fontFamily": "$font-body",
+                          "fontSize": 14.5,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DCWa2",
+                      "name": "Project Link",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "TXj0b",
+                          "name": "Label",
+                          "fill": "$accent",
+                          "content": "Ver no GitHub",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.5
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "d4iVFI",
+                          "name": "Link Mark",
+                          "fill": "$accent",
+                          "width": 16,
+                          "height": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "i6Oy5w",
+                  "name": "Project IkouEngine",
+                  "width": "fill_container",
+                  "height": 300,
+                  "fill": "$surface",
+                  "cornerRadius": 3,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "padding": 28,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "p9FD6",
+                      "name": "Project Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "q6KMf",
+                          "name": "Card Mark",
+                          "fill": "$accent",
+                          "width": 24,
+                          "height": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "ngACV",
+                          "name": "Project Title",
+                          "fill": "$text",
+                          "content": "IkouEngine",
+                          "fontFamily": "$font-display",
+                          "fontSize": 23,
+                          "fontWeight": "600",
+                          "letterSpacing": -0.2
+                        },
+                        {
+                          "type": "text",
+                          "id": "PFQyC",
+                          "name": "Project Description",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": 300,
+                          "content": "Engine de jogos pessoal, desenvolvida para estudo e prática de programação, arquitetura de software e Computer Graphics.",
+                          "lineHeight": 1.7,
+                          "fontFamily": "$font-body",
+                          "fontSize": 14.5,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uOZoT",
+                      "name": "Project Link",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GYLyC",
+                          "name": "Label",
+                          "fill": "$accent",
+                          "content": "Ver no GitHub",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.5
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "mKkcf",
+                          "name": "Link Mark",
+                          "fill": "$accent",
+                          "width": 16,
+                          "height": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "si2ZH",
+                  "name": "Project Ladcall",
+                  "width": "fill_container",
+                  "height": 300,
+                  "fill": "$surface",
+                  "cornerRadius": 3,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "padding": 28,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "RUDmi",
+                      "name": "Project Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "omsbz",
+                          "name": "Card Mark",
+                          "fill": "$accent",
+                          "width": 24,
+                          "height": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "CQSY5",
+                          "name": "Project Title",
+                          "fill": "$text",
+                          "content": "Ladcall",
+                          "fontFamily": "$font-display",
+                          "fontSize": 23,
+                          "fontWeight": "600",
+                          "letterSpacing": -0.2
+                        },
+                        {
+                          "type": "text",
+                          "id": "f1rpBp",
+                          "name": "Project Description",
+                          "fill": "$muted",
+                          "textGrowth": "fixed-width",
+                          "width": 300,
+                          "content": "Serviço de signaling P2P Híbrido (STUN/TURN) para aplicação de chamadas (WebRTC).",
+                          "lineHeight": 1.7,
+                          "fontFamily": "$font-body",
+                          "fontSize": 14.5,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "aCbVE",
+                      "name": "Project Link",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "o61F24",
+                          "name": "Label",
+                          "fill": "$accent",
+                          "content": "Visitar site",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal",
+                          "letterSpacing": 0.5
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "vt8fP",
+                          "name": "Link Mark",
+                          "fill": "$accent",
+                          "width": 16,
+                          "height": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CaKZ1",
+          "name": "Footer",
+          "width": "fill_container",
+          "stroke": "$border",
+          "strokeWidth": {
+            "top": 1
+          },
+          "strokeAlignment": "inner",
+          "padding": [
+            36,
+            64
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "COIcN",
+              "name": "Credit",
+              "gap": 5,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ivstj",
+                  "name": "Credit Lead",
+                  "fill": "$muted",
+                  "content": "Developed by",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "crLGU",
+                  "name": "Credit Name",
+                  "fill": "$accent",
+                  "content": "Lucas Diniz",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kwUYP",
+              "name": "Footer Links",
+              "gap": 22,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "gKGeM",
+                  "name": "Footer LinkedIn",
+                  "fill": "$muted",
+                  "content": "LinkedIn",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12.5,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "cHlSR",
+                  "name": "Footer GitHub",
+                  "fill": "$muted",
+                  "content": "GitHub",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12.5,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "mlHr0",
+                  "name": "Footer E-mail",
+                  "fill": "$muted",
+                  "content": "E-mail",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12.5,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Z7Ujc",
+      "x": 1600,
+      "y": 0,
+      "name": "Mobile / Portfolio",
+      "clip": true,
+      "width": 390,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "sfPPZ",
+          "name": "Mobile Header",
+          "width": "fill_container",
+          "height": 72,
+          "stroke": "$border",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "strokeAlignment": "inner",
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "c6JB3",
+              "name": "Brand",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "Y5k1uq",
+                  "name": "Brand Mark",
+                  "rotation": 45,
+                  "fill": "$accent",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "text",
+                  "id": "z7LYB",
+                  "name": "Brand Name",
+                  "fill": "$text",
+                  "content": "Lucas Diniz",
+                  "fontFamily": "$font-display",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "HuIwk",
+          "name": "Mobile Nav",
+          "width": "fill_container",
+          "stroke": "$border",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "strokeAlignment": "inner",
+          "padding": [
+            14,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "XKcOH",
+              "name": "Nav Sobre mim",
+              "fill": "$accent",
+              "content": "Sobre mim",
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "GUCyc",
+              "name": "Nav Experiências",
+              "fill": "$muted",
+              "content": "Experiências",
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "w1rEN",
+              "name": "Nav Formação",
+              "fill": "$muted",
+              "content": "Formação",
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "ArG5z",
+              "name": "Nav Projetos",
+              "fill": "$muted",
+              "content": "Projetos",
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "MfU5w",
+          "name": "Mobile Hero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 18,
+          "padding": [
+            36,
+            20,
+            44,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "v94M9",
+              "name": "Eyebrow",
+              "fill": "$accent",
+              "content": "Olá!",
+              "fontFamily": "$font-mono",
+              "fontSize": 12,
+              "fontWeight": "normal",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "oxmJs",
+              "name": "Headline",
+              "fill": "$text",
+              "textGrowth": "fixed-width",
+              "width": 350,
+              "content": "Seja bem-vindo(a) ao meu portfólio.",
+              "lineHeight": 1.12,
+              "fontFamily": "$font-display",
+              "fontSize": 38,
+              "fontWeight": "600",
+              "letterSpacing": -0.4
+            },
+            {
+              "type": "text",
+              "id": "KlgDH",
+              "name": "Tagline",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": 340,
+              "content": "Computer Science Student • Full Stack • Computer Graphics",
+              "lineHeight": 1.6,
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "BctuH",
+              "name": "Portrait Wrapper",
+              "width": 350,
+              "height": 392,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2,
+                  "id": "mtN1O",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Frame Outer Line",
+                  "width": 350,
+                  "height": 392,
+                  "stroke": "$accent",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner"
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2,
+                  "id": "Ahkmw",
+                  "x": 6,
+                  "y": 6,
+                  "name": "Frame Matte",
+                  "fill": "$surface",
+                  "width": 338,
+                  "height": 380,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner"
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 1,
+                  "id": "TCI5j",
+                  "x": 16,
+                  "y": 16,
+                  "name": "Portrait",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "assets/Eu.jpg",
+                    "mode": "cover"
+                  },
+                  "width": 318,
+                  "height": 360
+                },
+                {
+                  "type": "rectangle",
+                  "id": "M7qzfU",
+                  "x": 16,
+                  "y": 12,
+                  "name": "Frame Tick",
+                  "fill": "$accent",
+                  "width": 44,
+                  "height": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "A7qafi",
+              "name": "Mobile Music Player",
+              "width": "fill_container",
+              "fill": "$surface",
+              "cornerRadius": 4,
+              "stroke": "$border",
+              "strokeWidth": 1,
+              "gap": 12,
+              "padding": [
+                12,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "MAFuo",
+                  "name": "Note",
+                  "width": 34,
+                  "height": 34,
+                  "fill": "$surface2",
+                  "cornerRadius": 17,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "a9tnHj",
+                      "name": "Note Glyph",
+                      "fill": "$accent",
+                      "content": "♪",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "D7ck0",
+                  "name": "Track",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tCpGC",
+                      "name": "Track Title",
+                      "fill": "$text",
+                      "content": "Make It Happen (1000 Handz)",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12.5,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "E1sYS",
+                      "name": "Track Status",
+                      "fill": "$muted",
+                      "content": "parado",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gY2gz",
+                  "name": "Play Button",
+                  "fill": "$accent",
+                  "cornerRadius": 3,
+                  "padding": [
+                    8,
+                    13
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "nLoLB",
+                      "name": "Label",
+                      "fill": "#04141B",
+                      "content": "Play",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11.5,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "h9VCeV",
+              "name": "Actions",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "y2OGIX",
+                  "name": "Primary Button",
+                  "width": "fill_container",
+                  "fill": "$accent",
+                  "cornerRadius": 3,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "t232g",
+                      "name": "Label",
+                      "fill": "#04141B",
+                      "content": "Baixar Currículo (PDF)",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13.5,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pM3Um",
+                  "name": "Ghost Button",
+                  "width": "fill_container",
+                  "cornerRadius": 3,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "padding": [
+                    13,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "IRfFd",
+                      "name": "Label",
+                      "fill": "$text",
+                      "content": "Ver no LinkedIn",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ehYiv",
+          "name": "Mobile About",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 18,
+          "padding": [
+            48,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "qePv8",
+              "name": "Section Title",
+              "fill": "$text",
+              "content": "Sobre Mim",
+              "fontFamily": "$font-display",
+              "fontSize": 30,
+              "fontWeight": "600",
+              "letterSpacing": -0.3
+            },
+            {
+              "type": "rectangle",
+              "id": "xTsKo",
+              "name": "Accent Rule",
+              "fill": "$accent",
+              "width": 48,
+              "height": 2
+            },
+            {
+              "type": "text",
+              "id": "d9PtX",
+              "name": "Paragraph 1",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": 350,
+              "content": "Sou estudante de Ciência da Computação e graduado em Desenvolvimento de Jogos Digitais, formação que me proporcionou uma visão generalista sobre o desenvolvimento de software. Atualmente, faço parte do Projeto Conecta 2030, uma iniciativa brasileira voltada ao desenvolvimento de um ecossistema tecnológico cooperativo para a segurança no trânsito, com foco na detecção de pedestres e ciclistas por meio de inteligência artificial, conectividade 5G e gêmeos digitais.",
+              "lineHeight": 1.8,
+              "fontFamily": "$font-body",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "KUcQl",
+              "name": "Paragraph 2",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": 350,
+              "content": "Tenho interesse em estar sempre adquirindo novos conhecimentos e ampliando meu repertório profissional e pessoal. Acredito que grandes desafios nos levam a alcançar nosso potencial máximo e considero que estar constantemente aprendendo é fundamental para o desenvolvimento profissional.",
+              "lineHeight": 1.8,
+              "fontFamily": "$font-body",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "A71hY9",
+          "name": "Mobile Objectives",
+          "width": "fill_container",
+          "fill": "$surface",
+          "stroke": "$border",
+          "strokeWidth": {
+            "top": 1,
+            "bottom": 1
+          },
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 18,
+          "padding": [
+            48,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "C0d1g",
+              "name": "Section Title",
+              "fill": "$text",
+              "content": "Objetivos",
+              "fontFamily": "$font-display",
+              "fontSize": 30,
+              "fontWeight": "600",
+              "letterSpacing": -0.3
+            },
+            {
+              "type": "rectangle",
+              "id": "vFjLG",
+              "name": "Accent Rule",
+              "fill": "$accent",
+              "width": 48,
+              "height": 2
+            },
+            {
+              "type": "text",
+              "id": "wILeD",
+              "name": "Paragraph 1",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": 350,
+              "content": "Meu objetivo é continuar evoluindo na área de tecnologia, aprofundando meus conhecimentos e aplicando-os em projetos que gerem impacto positivo e resolvam problemas do mundo real.",
+              "lineHeight": 1.8,
+              "fontFamily": "$font-body",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "cEBwl",
+              "name": "Paragraph 2",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": 350,
+              "content": "Quero me dedicar especialmente a compreender melhor as melhores práticas de desenvolvimento de software, desde a concepção até a entrega, participando de projetos que envolvam dados, automação e soluções tecnológicas inovadoras.",
+              "lineHeight": 1.8,
+              "fontFamily": "$font-body",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Tybx4",
+          "name": "Mobile Experience",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            48,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "OoGjz",
+              "name": "Section Title",
+              "fill": "$text",
+              "content": "Experiências",
+              "fontFamily": "$font-display",
+              "fontSize": 30,
+              "fontWeight": "600",
+              "letterSpacing": -0.3
+            },
+            {
+              "type": "rectangle",
+              "id": "L7k0GT",
+              "name": "Accent Rule",
+              "fill": "$accent",
+              "width": 48,
+              "height": 2
+            },
+            {
+              "type": "text",
+              "id": "Xyevl",
+              "name": "Role",
+              "fill": "$text",
+              "textGrowth": "fixed-width",
+              "width": 350,
+              "content": "Iniciação Científica — Conecta 2030 (2025 – Atual)",
+              "lineHeight": 1.4,
+              "fontFamily": "$font-body",
+              "fontSize": 17,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "y1YEi",
+              "name": "Responsibility",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vTg31",
+                  "name": "Mark",
+                  "fill": "$accent",
+                  "content": "—",
+                  "lineHeight": 1.65,
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "GcQuq",
+                  "name": "Text",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 318,
+                  "content": "Desenvolvimento de soluções de software utilizando Python e Unreal Engine em projeto de pesquisa aplicada.",
+                  "lineHeight": 1.65,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "u07UoI",
+              "name": "Responsibility",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "CwumV",
+                  "name": "Mark",
+                  "fill": "$accent",
+                  "content": "—",
+                  "lineHeight": 1.65,
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "RYToL",
+                  "name": "Text",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 318,
+                  "content": "Desenvolvimento e integração de componentes para o CARLA Simulator e ambientes baseados em Unreal Engine.",
+                  "lineHeight": 1.65,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "asGXC",
+              "name": "Responsibility",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "e7ns5E",
+                  "name": "Mark",
+                  "fill": "$accent",
+                  "content": "—",
+                  "lineHeight": 1.65,
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "JLkFy",
+                  "name": "Text",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 318,
+                  "content": "Atuação em projeto envolvendo Digital Twins, Inteligência Artificial, Realidade Virtual e simulação computacional.",
+                  "lineHeight": 1.65,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "F2xAE",
+              "name": "Responsibility",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "T40YT",
+                  "name": "Mark",
+                  "fill": "$accent",
+                  "content": "—",
+                  "lineHeight": 1.65,
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "s4nV5",
+                  "name": "Text",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 318,
+                  "content": "Desenvolvimento de soluções para integração entre sistemas reais e ambientes virtuais/simulados.",
+                  "lineHeight": 1.65,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "iRi9w",
+              "name": "Responsibility",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "l3zJH",
+                  "name": "Mark",
+                  "fill": "$accent",
+                  "content": "—",
+                  "lineHeight": 1.65,
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "z1Gap",
+                  "name": "Text",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 318,
+                  "content": "Aplicação de conceitos de programação, computação gráfica e desenvolvimento de sistemas interativos.",
+                  "lineHeight": 1.65,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nde6k",
+              "name": "Responsibility",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "AdzuK",
+                  "name": "Mark",
+                  "fill": "$accent",
+                  "content": "—",
+                  "lineHeight": 1.65,
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "c5DTW",
+                  "name": "Text",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 318,
+                  "content": "Colaboração no desenvolvimento e prototipação de soluções em equipe multidisciplinar.",
+                  "lineHeight": 1.65,
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "htS88",
+              "name": "CV Button",
+              "width": "fill_container",
+              "cornerRadius": 3,
+              "stroke": "$border",
+              "strokeWidth": 1,
+              "padding": [
+                12,
+                0
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QaPi0",
+                  "name": "Label",
+                  "fill": "$text",
+                  "content": "Baixar Currículo (PDF)",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ErWHf",
+          "name": "Mobile Education",
+          "width": "fill_container",
+          "fill": "$surface",
+          "stroke": "$border",
+          "strokeWidth": {
+            "top": 1,
+            "bottom": 1
+          },
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            48,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "EgW4P",
+              "name": "Graduation",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "RtUoQ",
+                  "name": "Column Title",
+                  "fill": "$text",
+                  "content": "Graduação",
+                  "fontFamily": "$font-display",
+                  "fontSize": 26,
+                  "fontWeight": "600",
+                  "letterSpacing": -0.3
+                },
+                {
+                  "type": "frame",
+                  "id": "UIXBX",
+                  "name": "Degree",
+                  "width": "fill_container",
+                  "stroke": "$border",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "gap": 5,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ePOFB",
+                      "name": "Degree Title",
+                      "fill": "$text",
+                      "textGrowth": "fixed-width",
+                      "width": 350,
+                      "content": "Ciência da Computação — Cruzeiro do Sul Virtual",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "A9NER",
+                      "name": "Degree Date",
+                      "fill": "$muted",
+                      "content": "Conclusão prevista para 06/2030",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 11.5,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.3
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "icwty",
+                  "name": "Degree",
+                  "width": "fill_container",
+                  "stroke": "$border",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "gap": 5,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HgULr",
+                      "name": "Degree Title",
+                      "fill": "$text",
+                      "textGrowth": "fixed-width",
+                      "width": 350,
+                      "content": "Tecnologia em Jogos Digitais — Facens",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ILk7W",
+                      "name": "Degree Date",
+                      "fill": "$muted",
+                      "content": "Graduado em 07/2025",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 11.5,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.3
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "F8Qyb",
+                  "name": "Degree",
+                  "width": "fill_container",
+                  "stroke": "$border",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "strokeAlignment": "inner",
+                  "layout": "vertical",
+                  "gap": 5,
+                  "padding": [
+                    14,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "K1ozv2",
+                      "name": "Degree Title",
+                      "fill": "$text",
+                      "textGrowth": "fixed-width",
+                      "width": 350,
+                      "content": "Técnico em Informática — Etec Fernando Prestes",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15.5,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MlYUa",
+                      "name": "Degree Date",
+                      "fill": "$muted",
+                      "content": "Graduado em 12/2019",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 11.5,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "OR7iM",
+              "name": "Courses",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "KzglX",
+                  "name": "Column Title",
+                  "fill": "$text",
+                  "content": "Cursos",
+                  "fontFamily": "$font-display",
+                  "fontSize": 26,
+                  "fontWeight": "600",
+                  "letterSpacing": -0.3
+                },
+                {
+                  "type": "frame",
+                  "id": "C5PG1",
+                  "name": "Course",
+                  "width": "fill_container",
+                  "gap": 9,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QbDtA",
+                      "name": "Mark",
+                      "fill": "$accent",
+                      "content": "—",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "HbP23",
+                      "name": "Text",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 315,
+                      "content": "Git - Básico ao avançado (Udemy)",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 13.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Q0qPv",
+                  "name": "Course",
+                  "width": "fill_container",
+                  "gap": 9,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "j6SZb",
+                      "name": "Mark",
+                      "fill": "$accent",
+                      "content": "—",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "f40i8A",
+                      "name": "Text",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 315,
+                      "content": "Programação em Python do básico ao avançado (Udemy)",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 13.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "CfDBv",
+                  "name": "Course",
+                  "width": "fill_container",
+                  "gap": 9,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hOtqj",
+                      "name": "Mark",
+                      "fill": "$accent",
+                      "content": "—",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fjcnE",
+                      "name": "Text",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 315,
+                      "content": "Process of Creating a Stylized Anime Room in Blender (Udemy)",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 13.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zXfiZ",
+                  "name": "Course",
+                  "width": "fill_container",
+                  "gap": 9,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VuBMr",
+                      "name": "Mark",
+                      "fill": "$accent",
+                      "content": "—",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "DONv0",
+                      "name": "Text",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 315,
+                      "content": "Escultura Digital com o Blender (Udemy)",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 13.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gor8r",
+                  "name": "Course",
+                  "width": "fill_container",
+                  "gap": 9,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vbjMO",
+                      "name": "Mark",
+                      "fill": "$accent",
+                      "content": "—",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "DgKi1",
+                      "name": "Text",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 315,
+                      "content": "Blender Total! Do básico ao avançado em 3D! (Udemy)",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 13.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "o46bZv",
+                  "name": "Course",
+                  "width": "fill_container",
+                  "gap": 9,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CmLmV",
+                      "name": "Mark",
+                      "fill": "$accent",
+                      "content": "—",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "b6Gr0u",
+                      "name": "Text",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": 315,
+                      "content": "Aprendendo programação básica e avançada em Linguagem C++ (Udemy)",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 13.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ESfbR",
+              "name": "LinkedIn Button",
+              "width": "fill_container",
+              "cornerRadius": 3,
+              "stroke": "$accent",
+              "strokeWidth": 1,
+              "padding": [
+                12,
+                0
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "uCnEB",
+                  "name": "Label",
+                  "fill": "$accent",
+                  "content": "Ver no LinkedIn",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "u8HjIX",
+          "name": "Mobile Projects",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            48,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "KFXZZ",
+              "name": "Section Title",
+              "fill": "$text",
+              "content": "Projetos",
+              "fontFamily": "$font-display",
+              "fontSize": 30,
+              "fontWeight": "600",
+              "letterSpacing": -0.3
+            },
+            {
+              "type": "rectangle",
+              "id": "qXfj6",
+              "name": "Accent Rule",
+              "fill": "$accent",
+              "width": 48,
+              "height": 2
+            },
+            {
+              "type": "frame",
+              "id": "jIDzQ",
+              "name": "Project Kotoba",
+              "width": "fill_container",
+              "fill": "$surface",
+              "cornerRadius": 3,
+              "stroke": "$border",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 22,
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "Yt2EJ",
+                  "name": "Card Mark",
+                  "fill": "$accent",
+                  "width": 22,
+                  "height": 2
+                },
+                {
+                  "type": "text",
+                  "id": "P5pp0A",
+                  "name": "Project Title",
+                  "fill": "$text",
+                  "content": "Kotoba",
+                  "fontFamily": "$font-display",
+                  "fontSize": 21,
+                  "fontWeight": "600",
+                  "letterSpacing": -0.2
+                },
+                {
+                  "type": "text",
+                  "id": "K84cW",
+                  "name": "Project Description",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 306,
+                  "content": "Kotoba é um dicionário Japonês → Português Brasileiro. As traduções em pt-BR são uma camada lexical própria.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "$font-body",
+                  "fontSize": 13.5,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "O5PvBB",
+                  "name": "Project Link",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "azoAN",
+                      "name": "Label",
+                      "fill": "$accent",
+                      "content": "Ver no GitHub",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 11.5,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.4
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "n9uIh",
+                      "name": "Link Mark",
+                      "fill": "$accent",
+                      "width": 14,
+                      "height": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ddNYq",
+              "name": "Project IkouEngine",
+              "width": "fill_container",
+              "fill": "$surface",
+              "cornerRadius": 3,
+              "stroke": "$border",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 22,
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "AGWsA",
+                  "name": "Card Mark",
+                  "fill": "$accent",
+                  "width": 22,
+                  "height": 2
+                },
+                {
+                  "type": "text",
+                  "id": "S62kYk",
+                  "name": "Project Title",
+                  "fill": "$text",
+                  "content": "IkouEngine",
+                  "fontFamily": "$font-display",
+                  "fontSize": 21,
+                  "fontWeight": "600",
+                  "letterSpacing": -0.2
+                },
+                {
+                  "type": "text",
+                  "id": "gYGOA",
+                  "name": "Project Description",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 306,
+                  "content": "Engine de jogos pessoal, desenvolvida para estudo e prática de programação, arquitetura de software e Computer Graphics.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "$font-body",
+                  "fontSize": 13.5,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "xzOr9",
+                  "name": "Project Link",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "GgczH",
+                      "name": "Label",
+                      "fill": "$accent",
+                      "content": "Ver no GitHub",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 11.5,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.4
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "K9geQK",
+                      "name": "Link Mark",
+                      "fill": "$accent",
+                      "width": 14,
+                      "height": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gaRDQ",
+              "name": "Project Ladcall",
+              "width": "fill_container",
+              "fill": "$surface",
+              "cornerRadius": 3,
+              "stroke": "$border",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 22,
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "eokg0",
+                  "name": "Card Mark",
+                  "fill": "$accent",
+                  "width": 22,
+                  "height": 2
+                },
+                {
+                  "type": "text",
+                  "id": "YlMWq",
+                  "name": "Project Title",
+                  "fill": "$text",
+                  "content": "Ladcall",
+                  "fontFamily": "$font-display",
+                  "fontSize": 21,
+                  "fontWeight": "600",
+                  "letterSpacing": -0.2
+                },
+                {
+                  "type": "text",
+                  "id": "WaZ5N",
+                  "name": "Project Description",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": 306,
+                  "content": "Serviço de signaling P2P Híbrido (STUN/TURN) para aplicação de chamadas (WebRTC).",
+                  "lineHeight": 1.7,
+                  "fontFamily": "$font-body",
+                  "fontSize": 13.5,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "x0492",
+                  "name": "Project Link",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Jj3d9",
+                      "name": "Label",
+                      "fill": "$accent",
+                      "content": "Visitar site",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 11.5,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.4
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "r0hrLE",
+                      "name": "Link Mark",
+                      "fill": "$accent",
+                      "width": 14,
+                      "height": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Vu2Hy",
+          "name": "Mobile Footer",
+          "width": "fill_container",
+          "stroke": "$border",
+          "strokeWidth": {
+            "top": 1
+          },
+          "strokeAlignment": "inner",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            28,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "I9x5bo",
+              "name": "Credit",
+              "gap": 5,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "j2rQRm",
+                  "name": "Credit Lead",
+                  "fill": "$muted",
+                  "content": "Developed by",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12.5,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "v9eR6",
+                  "name": "Credit Name",
+                  "fill": "$accent",
+                  "content": "Lucas Diniz",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12.5,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "y5c1n",
+              "name": "Footer Links",
+              "gap": 18,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "g1SxMu",
+                  "name": "Footer LinkedIn",
+                  "fill": "$muted",
+                  "content": "LinkedIn",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "G6KPn",
+                  "name": "Footer GitHub",
+                  "fill": "$muted",
+                  "content": "GitHub",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "CcZSM",
+                  "name": "Footer E-mail",
+                  "fill": "$muted",
+                  "content": "E-mail",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "bg": {
+      "type": "color",
+      "value": "#05080C"
+    },
+    "surface": {
+      "type": "color",
+      "value": "#0A121B"
+    },
+    "surface2": {
+      "type": "color",
+      "value": "#0D1824"
+    },
+    "border": {
+      "type": "color",
+      "value": "#1A2A38"
+    },
+    "text": {
+      "type": "color",
+      "value": "#E6F2F9"
+    },
+    "muted": {
+      "type": "color",
+      "value": "#A7BECC"
+    },
+    "accent": {
+      "type": "color",
+      "value": "#4CC4EC"
+    },
+    "accentBright": {
+      "type": "color",
+      "value": "#8FE4FA"
+    },
+    "font-display": {
+      "type": "string",
+      "value": "Space Grotesk"
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "font-mono": {
+      "type": "string",
+      "value": "IBM Plex Mono"
+    }
+  },
+  "fileToken": "5380e940-c16a-4791-a892-0aab1fd02411"
+}
