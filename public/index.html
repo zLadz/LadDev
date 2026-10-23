@@ -4,113 +4,247 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio | Lucas Diniz</title>
+  <meta name="description" content="Portfólio de Lucas Diniz — Computer Science Student • Full Stack • Computer Graphics.">
+  <meta name="theme-color" content="#05080C">
+  <meta property="og:title" content="Portfólio | Lucas Diniz">
+  <meta property="og:description" content="Portfólio de Lucas Diniz — Computer Science Student • Full Stack • Computer Graphics.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
 
-<div class="music-player" id="musicPlayer" role="region" aria-label="Player de música">
-  <div class="music-info">
-    <span class="music-note" aria-hidden="true">♪</span>
-    <div class="music-text">
-      <span class="music-title">Make It Happen (1000 Handz)</span>
-      <span class="music-status" id="musicStatus">parado</span>
-    </div>
-  </div>
-  <button class="music-btn" id="musicBtn" aria-label="Reproduzir ou pausar a música">Play</button>
-</div>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
 <header class="site-header">
-  <h1>Lucas Diniz</h1>
-  <p>Computer Science Student • Full Stack • Computer Graphics</p>
+  <div class="wrap header-grid">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true"></span>
+      Lucas Diniz
+    </a>
 
-  <div class="header-buttons">
-    <a href="https://www.linkedin.com/in/lucas-diniz-0940ba1a4/" target="_blank" rel="noopener" class="header-btn">LinkedIn</a>
-    <a href="https://github.com/zLadz" target="_blank" rel="noopener" class="header-btn">GitHub</a>
-    <a href="mailto:lucas.alediniz01@gmail.com" class="header-btn">E-mail</a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#sobre" class="is-active" aria-current="location">Sobre mim</a>
+      <a href="#experiencias">Experiências</a>
+      <a href="#formacao">Formação</a>
+      <a href="#projetos">Projetos</a>
+    </nav>
+
+    <div class="header-social">
+      <a href="https://www.linkedin.com/in/lucas-diniz-0940ba1a4/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/zLadz" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="mailto:lucas.alediniz01@gmail.com">E-mail</a>
+    </div>
   </div>
 </header>
 
-<nav class="site-nav" aria-label="Navegação principal">
-  <a href="index.html" class="active">Sobre mim</a>
-  <a href="experiencias.html">Experiências</a>
-  <a href="formacao.html">Formação</a>
-  <a href="projetos.html">Projetos</a>
-</nav>
+<main id="conteudo" tabindex="-1">
 
-<main class="container">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Olá!</p>
+        <h1 id="hero-title">Seja bem-vindo(a) ao meu portfólio.</h1>
+        <p class="tagline">Computer Science Student • Full Stack • Computer Graphics</p>
 
-  <section class="profile-wrapper" aria-label="Apresentação">
-    <div class="profile-pic">
-      <img src="assets/Eu.jpg" alt="Foto de perfil de Lucas Diniz">
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="assets/Lucas_Alessandro_Diniz_CV_ATS.pdf" download>Baixar Currículo (PDF)</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/lucas-diniz-0940ba1a4/" target="_blank" rel="noopener noreferrer">Ver no LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <figure class="portrait-frame">
+          <div class="portrait-mat">
+            <img src="assets/Eu.jpg" alt="Foto de perfil de Lucas Diniz" width="400" height="400">
+          </div>
+        </figure>
+
+        <div class="music-player" role="region" aria-label="Player de música">
+          <span class="player-note" aria-hidden="true">♪</span>
+          <div class="player-text">
+            <span class="player-title">Make It Happen (1000 Handz)</span>
+            <span class="player-status" id="musicStatus" aria-live="polite">parado</span>
+          </div>
+          <button class="player-btn" id="musicBtn" type="button" aria-label="Reproduzir ou pausar a música" aria-pressed="false">Play</button>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="speech-bubble">
-      Olá!<br>Seja bem-vindo(a) ao meu portfólio.
+  <section class="section" id="sobre" aria-labelledby="sobre-title">
+    <div class="wrap split">
+      <div class="section-head">
+        <h2 id="sobre-title">Sobre Mim</h2>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
+
+      <div class="section-body">
+        <p>
+          Sou estudante de Ciência da Computação e graduado em Desenvolvimento de Jogos Digitais,
+          formação que me proporcionou uma visão generalista sobre o desenvolvimento de software.
+          Atualmente, faço parte do Projeto Conecta 2030, uma iniciativa brasileira voltada ao desenvolvimento
+          de um ecossistema tecnológico cooperativo para a segurança no trânsito, com foco na detecção de pedestres e
+          ciclistas por meio de inteligência artificial, conectividade 5G e gêmeos digitais.
+        </p>
+
+        <p>
+          Tenho interesse em estar sempre adquirindo novos conhecimentos e ampliando meu repertório profissional e pessoal.
+          Acredito que grandes desafios nos levam a alcançar nosso potencial máximo e considero que estar constantemente
+          aprendendo é fundamental para o desenvolvimento profissional.
+        </p>
+      </div>
     </div>
   </section>
 
-  <section aria-labelledby="sobre-titulo">
-    <h2 id="sobre-titulo">Sobre Mim</h2>
-    <p>
-      Sou estudante de Ciência da Computação e graduado em Desenvolvimento de Jogos Digitais,
-      formação que me proporcionou uma visão generalista sobre o desenvolvimento de software.
-      Atualmente, faço parte do Projeto Conecta 2030, uma iniciativa brasileira voltada ao desenvolvimento 
-      de um ecossistema tecnológico cooperativo para a segurança no trânsito, com foco na detecção de pedestres e 
-      ciclistas por meio de inteligência artificial, conectividade 5G e gêmeos digitais. 
-    </p>
+  <section class="section section--objectives" aria-labelledby="objetivos-title">
+    <div class="wrap split">
+      <div class="section-head">
+        <h2 id="objetivos-title">Objetivos</h2>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
 
-    <p>
-      Tenho interesse em estar sempre adquirindo novos conhecimentos e ampliando meu repertório profissional e pessoal. 
-      Acredito que grandes desafios nos levam a alcançar nosso potencial máximo e considero que estar constantemente 
-      aprendendo é fundamental para o desenvolvimento profissional.
-    </p>
+      <div class="section-body">
+        <p>
+          Meu objetivo é continuar evoluindo na área de tecnologia, aprofundando meus conhecimentos e aplicando-os
+          em projetos que gerem impacto positivo e resolvam problemas do mundo real.
+        </p>
+
+        <p>
+          Quero me dedicar especialmente a compreender melhor as melhores práticas de desenvolvimento de software,
+          desde a concepção até a entrega, participando de projetos que envolvam dados, automação e soluções
+          tecnológicas inovadoras.
+        </p>
+      </div>
+    </div>
   </section>
 
-  <section aria-labelledby="objetivos-titulo">
-    <h2 id="objetivos-titulo">Objetivos</h2>
-    <p>
-      Meu objetivo é continuar evoluindo na área de tecnologia, aprofundando meus conhecimentos e aplicando-os
-      em projetos que gerem impacto positivo e resolvam problemas do mundo real.
-    </p>
+  <section class="section section--experience" id="experiencias" aria-labelledby="experiencias-title">
+    <div class="wrap split">
+      <div class="section-head">
+        <h2 id="experiencias-title">Experiências</h2>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
 
-    <p>
-      Quero me dedicar especialmente a compreender melhor as melhores práticas de desenvolvimento de software,
-      desde a concepção até a entrega, participando de projetos que envolvam dados, automação e soluções
-      tecnológicas inovadoras.
-    </p>
+      <div class="section-body experience-body">
+        <h3 class="role">Iniciação Científica — Conecta 2030 (2025 – Atual)</h3>
+
+        <ul class="bullets">
+          <li>Desenvolvimento de soluções de software utilizando Python e Unreal Engine em projeto de pesquisa aplicada.</li>
+          <li>Desenvolvimento e integração de componentes para o CARLA Simulator e ambientes baseados em Unreal Engine.</li>
+          <li>Atuação em projeto envolvendo Digital Twins, Inteligência Artificial, Realidade Virtual e simulação computacional.</li>
+          <li>Desenvolvimento de soluções para integração entre sistemas reais e ambientes virtuais/simulados.</li>
+          <li>Aplicação de conceitos de programação, computação gráfica e desenvolvimento de sistemas interativos.</li>
+          <li>Colaboração no desenvolvimento e prototipação de soluções em equipe multidisciplinar.</li>
+        </ul>
+
+        <a class="btn btn-ghost btn-compact" href="assets/Lucas_Alessandro_Diniz_CV_ATS.pdf" download>Baixar Currículo (PDF)</a>
+      </div>
+    </div>
   </section>
 
-  <div class="download-wrapper">
-    <a href="assets/Lucas_Alessandro_Diniz_CV_ATS.pdf" class="download-btn" download>Baixar Currículo (PDF)</a>
-  </div>
+  <section class="section section--education" id="formacao" aria-labelledby="formacao-title">
+    <div class="wrap education-wrap">
+      <h2 class="sr-only" id="formacao-title">Formação</h2>
 
-  <section class="polaroid-frame" aria-label="Galeria de fotos">
+      <div class="education-grid">
+        <div class="education-col education-col--graduation">
+          <h3 class="column-title">Graduação</h3>
+          <ul class="degree-list">
+            <li class="degree">
+              <span class="degree-title">Ciência da Computação — Cruzeiro do Sul Virtual</span>
+              <span class="degree-date">Conclusão prevista para 06/2030</span>
+            </li>
+            <li class="degree">
+              <span class="degree-title">Tecnologia em Jogos Digitais — Facens</span>
+              <span class="degree-date">Graduado em 07/2025</span>
+            </li>
+            <li class="degree">
+              <span class="degree-title">Técnico em Informática — Etec Fernando Prestes</span>
+              <span class="degree-date">Graduado em 12/2019</span>
+            </li>
+          </ul>
+        </div>
 
-    <figure class="polaroid polaroid-1" onclick="openZoom(this)">
-      <img src="assets/evento1.svg" alt="Imagem ilustrativa de um evento exemplar">
-      <figcaption>Evento exemplar</figcaption>
-    </figure>
+        <div class="education-col education-col--courses">
+          <h3 class="column-title">Cursos</h3>
+          <ul class="course-list">
+            <li>Git - Básico ao avançado (Udemy)</li>
+            <li>Programação em Python do básico ao avançado (Udemy)</li>
+            <li>Process of Creating a Stylized Anime Room in Blender (Udemy)</li>
+            <li>Escultura Digital com o Blender (Udemy)</li>
+            <li>Blender Total! Do básico ao avançado em 3D! (Udemy)</li>
+            <li>Aprendendo programação básica e avançada em Linguagem C++ (Udemy)</li>
+          </ul>
+        </div>
+      </div>
 
-    <figure class="polaroid polaroid-2" onclick="openZoom(this)">
-      <img src="assets/evento2.svg" alt="Imagem ilustrativa de estudo de mercado">
-      <figcaption>Estudo de mercado</figcaption>
-    </figure>
+      <a class="btn btn-outline" href="https://www.linkedin.com/in/lucas-diniz-0940ba1a4/" target="_blank" rel="noopener noreferrer">Ver no LinkedIn</a>
+    </div>
+  </section>
 
-    <figure class="polaroid polaroid-3" onclick="openZoom(this)">
-      <img src="assets/evento3.svg" alt="Imagem ilustrativa de um meetup de tecnologia">
-      <figcaption>Meetup de tecnologia</figcaption>
-    </figure>
+  <section class="section section--projects" id="projetos" aria-labelledby="projetos-title">
+    <div class="wrap">
+      <div class="section-head projects-head">
+        <h2 id="projetos-title">Projetos</h2>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
 
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-top">
+            <span class="card-mark" aria-hidden="true"></span>
+            <h3>Kotoba</h3>
+            <p>Kotoba é um dicionário Japonês → Português Brasileiro. As traduções em pt-BR são uma camada lexical própria.</p>
+          </div>
+          <a class="card-link" href="https://github.com/zLadz/Kotoba-Jisho" target="_blank" rel="noopener noreferrer">
+            Ver no GitHub
+            <span class="link-line" aria-hidden="true"></span>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="card-mark" aria-hidden="true"></span>
+            <h3>IkouEngine</h3>
+            <p>Engine de jogos pessoal, desenvolvida para estudo e prática de programação, arquitetura de software e Computer Graphics.</p>
+          </div>
+          <a class="card-link" href="https://github.com/zLadz/IkouEngine" target="_blank" rel="noopener noreferrer">
+            Ver no GitHub
+            <span class="link-line" aria-hidden="true"></span>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="card-mark" aria-hidden="true"></span>
+            <h3>Ladcall</h3>
+            <p>Serviço de signaling P2P Híbrido (STUN/TURN) para aplicação de chamadas (WebRTC).</p>
+          </div>
+          <a class="card-link" href="https://ladcall.io/" target="_blank" rel="noopener noreferrer">
+            Visitar site
+            <span class="link-line" aria-hidden="true"></span>
+          </a>
+        </article>
+      </div>
+    </div>
   </section>
 
 </main>
 
-<div class="zoom-modal" id="zoomModal" onclick="closeZoom()" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
-  <img id="zoomImage" src="" alt="Imagem ampliada">
-</div>
-
 <footer class="site-footer">
-  <p>Developed by <a href="https://github.com/zLadz" target="_blank" rel="noopener">Lucas Diniz</a></p>
+  <div class="wrap footer-inner">
+    <p class="credit">Developed by <a href="https://github.com/zLadz" target="_blank" rel="noopener noreferrer">Lucas Diniz</a></p>
+
+    <nav class="footer-links" aria-label="Redes e contato">
+      <a href="https://www.linkedin.com/in/lucas-diniz-0940ba1a4/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/zLadz" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="mailto:lucas.alediniz01@gmail.com">E-mail</a>
+    </nav>
+  </div>
 </footer>
 
 <script src="js/main.js"></script>

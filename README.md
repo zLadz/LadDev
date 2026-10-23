@@ -1,7 +1,7 @@
 # LadDev
 
-Site portfólio com backend em **Node.js (Express)**.
-Contém páginas de Sobre mim, Experiências, Formação e Projetos.
+Site portfólio single-page com backend em **Node.js (Express)**.
+As seções Sobre mim, Experiências, Formação e Projetos ficam na mesma página, acessíveis por âncoras.
 
 ## Como rodar
 
@@ -30,18 +30,22 @@ Acesse em: http://localhost:3000
 ```
 - server.js              Backend Node.js/Express
 - public/
-  - index.html           Sobre mim
-  - experiencias.html    Experiências
-  - formacao.html        Formação
-  - projetos.html        Projetos
-  - css/style.css        Estilos do tema
-  - js/main.js           Interações (cursor e zoom de fotos)
-  - assets/              Imagens (SVG) e currículo (PDF) de exemplo
+  - index.html           Página única (Hero, Sobre, Objetivos, Experiências, Formação, Projetos)
+  - experiencias.html    Redireciona para #experiencias
+  - formacao.html        Redireciona para #formacao
+  - projetos.html        Redireciona para #projetos
+  - css/style.css        Tokens e layout responsivo
+  - js/main.js           Player de áudio e navegação com scroll-spy
+  - favicon.svg          Ícone do site
+  - assets/              Foto, currículo (PDF) e trilha sonora (MP3)
+- data/projetos.js       Dados dos projetos
+- api/projetos.js        Função serverless para a API
+- templates/             Design de referência (.pen)
 ```
 
 ## API
 
-Endpoint de exemplo consumido pela página de Projetos:
+Endpoint disponível com os dados dos projetos (os cards da página são estáticos):
 
 - `GET /api/projetos` — retorna a lista de projetos em JSON.
 

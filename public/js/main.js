@@ -1,21 +1,3 @@
-function openZoom(el) {
-  var img = el.querySelector('img');
-  var zoomImg = document.getElementById('zoomImage');
-  zoomImg.src = img.src;
-  document.getElementById('zoomModal').style.display = 'flex';
-}
-
-function closeZoom() {
-  document.getElementById('zoomModal').style.display = 'none';
-}
-
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Escape') {
-    closeZoom();
-  }
-});
-
-/* ===== Player de música (áudio local) ===== */
 var musicBtn = document.getElementById('musicBtn');
 var musicStatus = document.getElementById('musicStatus');
 
@@ -35,13 +17,10 @@ function setStatus(texto) {
 function setPlaying(estaTocando) {
   playing = estaTocando;
   if (!musicBtn) return;
-  if (estaTocando) {
-    musicBtn.textContent = 'Pause';
-    musicBtn.classList.add('playing');
-  } else {
-    musicBtn.textContent = 'Play';
-    musicBtn.classList.remove('playing');
-  }
+
+  musicBtn.textContent = estaTocando ? 'Pause' : 'Play';
+  musicBtn.classList.toggle('is-playing', estaTocando);
+  musicBtn.setAttribute('aria-pressed', String(estaTocando));
 }
 
 audio.addEventListener('play', function () {
@@ -63,105 +42,66 @@ if (musicBtn) {
   musicBtn.addEventListener('click', function () {
     if (playing) {
       audio.pause();
-    } else {
-      audio.play();
+      return;
+    }
+
+    var tentativa = audio.play();
+    if (tentativa && typeof tentativa.catch === 'function') {
+      tentativa.catch(function () {
+        setPlaying(false);
+        setStatus('erro de reprodução');
+      });
     }
   });
 }
 
-/* ===== Projetos (via API) ===== */
-function carregarProjetos() {
-  var container = document.getElementById('lista-projetos');
-  if (!container) return;
-  container.innerHTML = '<p>Carregando projetos...</p>';
-  fetch('/api/projetos')
-    .then(function (res) {
-      return res.json();
-    })
-    .then(function (projetos) {
-      container.innerHTML = '';
-      projetos.forEach(function (p) {
-        var card = document.createElement('div');
-        card.className = 'project-card';
-        var rotulo;
-        var classe;
-        if (p.tipo === 'site') {
-          rotulo = 'Visitar site';
-          classe = 'site-btn';
-        } else {
-          rotulo = 'Ver no GitHub';
-          classe = 'viewgh-btn';
-        }
-        card.innerHTML =
-          '<h3>' + p.titulo + '</h3>' +
-          '<p>' + p.descricao + '</p>' +
-          '<a href="' + p.link + '" target="_blank" rel="noopener" class="' + classe + '">' + rotulo + '</a>';
-        container.appendChild(card);
-      });
-    })
-    .catch(function () {
-      if (container) {
-        container.innerHTML = '<p>Não foi possível carregar os projetos.</p>';
-      }
-    });
-}
+var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav a[href^="#"]'));
+var navSections = navLinks
+  .map(function (link) {
+    return document.getElementById(link.getAttribute('href').slice(1));
+  })
+  .filter(Boolean);
 
-/* ===== Navegação sem recarregar a página (música continua) ===== */
-function routePath() {
-  return location.pathname.split('/').pop() || 'index.html';
-}
+function setActiveSection(id) {
+  navLinks.forEach(function (link) {
+    var ativo = link.getAttribute('href') === '#' + id;
+    link.classList.toggle('is-active', ativo);
 
-function setActiveNav(path) {
-  document.querySelectorAll('nav a').forEach(function (a) {
-    a.classList.toggle('active', a.getAttribute('href') === path);
+    if (ativo) {
+      link.setAttribute('aria-current', 'location');
+    } else {
+      link.removeAttribute('aria-current');
+    }
   });
 }
 
-function navigateTo(href) {
-  fetch(href)
-    .then(function (res) {
-      return res.text();
-    })
-    .then(function (html) {
-      var doc = new DOMParser().parseFromString(html, 'text/html');
-      var novo = doc.querySelector('.container');
-      var alvo = document.querySelector('.container');
-      if (novo && alvo) {
-        alvo.innerHTML = novo.innerHTML;
-      }
-      var titulo = doc.querySelector('title');
-      if (titulo) {
-        document.title = titulo.textContent;
-      }
-      var path = href.split('/').pop();
-      setActiveNav(path);
-      if (path === 'projetos.html') {
-        carregarProjetos();
-      }
-      window.scrollTo(0, 0);
-    });
+var frameAgendado = false;
+
+function atualizarSecaoAtiva() {
+  frameAgendado = false;
+  if (!navSections.length) return;
+
+  var referencia = window.scrollY + 120;
+  var atual = navSections[0].id;
+
+  navSections.forEach(function (secao) {
+    if (secao.offsetTop <= referencia) {
+      atual = secao.id;
+    }
+  });
+
+  setActiveSection(atual);
 }
 
-document.addEventListener('click', function (e) {
-  var link = e.target.closest ? e.target.closest('nav a') : null;
-  if (link) {
-    e.preventDefault();
-    var href = link.getAttribute('href');
-    if (href === routePath()) return;
-    history.pushState({}, '', href);
-    navigateTo(href);
-  }
-});
+function agendarAtualizacao() {
+  if (frameAgendado) return;
+  frameAgendado = true;
+  window.requestAnimationFrame(atualizarSecaoAtiva);
+}
 
-window.addEventListener('popstate', function () {
-  navigateTo(routePath());
-});
+window.addEventListener('scroll', agendarAtualizacao, { passive: true });
+window.addEventListener('resize', agendarAtualizacao);
+window.addEventListener('load', agendarAtualizacao);
+window.addEventListener('hashchange', agendarAtualizacao);
 
-/* ===== Inicialização ===== */
-(function () {
-  var path = routePath();
-  setActiveNav(path);
-  if (path === 'projetos.html') {
-    carregarProjetos();
-  }
-})();
+atualizarSecaoAtiva();
